@@ -6,10 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank</title>
+
+
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0f0a97137d.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="antialiased bg-gray-100 ">
+    <h1 class="text-center font-bold text-3xl  mt-2  ">Keep track of your money</h1>
+
+    <div class="flex w-full min-h-screen justify-center items-center shadow-lg">
+
+        <div
+            class="flex flex-col md:flex-row md:space-x-6  space-y-6 md:space-y-0  bg-cyan-700 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white sm:p-12">
+            <div class="flex flex-col justify-between ">
+                <div>
+                    <img src="bank.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="bg-white rounde-xl shadow-lg p-8 text-black md:w-100 ">
+                <form action="" class="flex flex-col space-y-4">
+                    <div>
+                        <h2 class="text-center font-bold text-2xl">Income</h2>
+                        <label for="" class="text-xl ">Income</label>
+                        <div>
+                            <input type="text" placeholder="Enter your income"
+                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2">
+                        </div>
+                    </div>
+
+
+
+                    <div>
+                        <h2 class="text-center font-bold text-2xl">Expenses</h2>
+
+                    </div>
+
+                    <div>
+
+                        <label for="" class="text-xl">Food:</label>
+
+
+                        <input type="text"
+                            class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2">
+                    </div>
+
+
+                    <div>
+
+                        <label for="" class="text-xl">Rent:</label>
+
+
+                        <input type="text"
+                            class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2">
+                    </div>
+
+
+
+                    <div>
+
+                        <label for="" class="text-xl">Clothes:</label>
+
+
+                        <input type="text"
+                            class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2">
+                    </div>
+
+                    <button
+                        class="inline-block flex justify-center bg-sky-500 hover:bg-sky-700 text-white font-bold rounded-lg px-6 py-2">
+
+                        Calculate
+
+                    </button>
+
+                    <div>Total expenses:$<span>5500</span></div>
+                    <div>Balance:$<span>4500</span></div>
+                    <div>Saving Amount:$<span>2000</span></div>
+                    <div>Remaining Balance:$<span>2500</span></div>
+
+
+
+
+
+                </form>
+
+
+            </div>
+
+        </div>
+    </div>
+
 
 
     <script src="js/app.js"></script>
