@@ -22,4 +22,11 @@ function sumTotal() {
     document.getElementById('balance').innerText = balancetotal;
     document.getElementById('savings').innerText = savingsTotal;
 
+    //clear the  field
+
+    expenseTotal.innerText = '';
+    balancetotal.innerText = '';
+    savingsTotal.innerText = '';
+
+
 }
