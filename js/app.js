@@ -7,26 +7,33 @@ function getInputValue(cost) {
 
 //total calculation
 function sumTotal() {
-    const incomeTotal = getInputValue('income');
-    const foodTotal = getInputValue('food');
-    const clothesTotal = getInputValue('clothes');
-    const rentTotal = getInputValue('rent');
 
-    const expenseTotal = foodTotal + clothesTotal + rentTotal;
+    if (isNaN(cost)) {
+        alert("Enter a number");
+    }
+    else {
+        const incomeTotal = getInputValue('income');
+        const foodTotal = getInputValue('food');
+        const clothesTotal = getInputValue('clothes');
+        const rentTotal = getInputValue('rent');
 
-    const balancetotal = incomeTotal - expenseTotal;
+        const expenseTotal = foodTotal + clothesTotal + rentTotal;
 
-    const savingsTotal = balancetotal / 10;
+        const balancetotal = incomeTotal - expenseTotal;
 
-    document.getElementById('total-expense').innerText = expenseTotal;
-    document.getElementById('balance').innerText = balancetotal;
-    document.getElementById('savings').innerText = savingsTotal;
+        const savingsTotal = balancetotal / 10;
 
-    //clear the  field
+        document.getElementById('total-expense').innerText = expenseTotal;
+        document.getElementById('balance').innerText = balancetotal;
+        document.getElementById('savings').innerText = savingsTotal;
 
-    expenseTotal.innerText = '';
-    balancetotal.innerText = '';
-    savingsTotal.innerText = '';
+        //clear the  field
+
+        expenseTotal.innerText = '';
+        balancetotal.innerText = '';
+        savingsTotal.innerText = '';
+    }
+
 
 
 }
