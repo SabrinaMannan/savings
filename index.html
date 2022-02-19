@@ -29,20 +29,21 @@
             </div>
 
             <div class="bg-white rounde-xl shadow-lg p-8 text-black md:w-100 ">
-                <form action="" class="flex flex-col space-y-4">
+                <section class="flex flex-col space-y-4">
                     <div>
                         <h2 class="text-center font-bold text-2xl">Income</h2>
                         <label for="" class="text-xl ">Income</label>
                         <div>
-                            <input type="text" placeholder="Enter your income"
-                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2">
+                            <input type="text" id="income" placeholder="Enter your income" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2
+                                ">
+
                         </div>
                     </div>
 
 
 
                     <div>
-                        <h2 class="text-center font-bold text-2xl">Expenses</h2>
+                        <h2 class="text-center font-bold text-2xl ">Expenses</h2>
 
                     </div>
 
@@ -51,7 +52,7 @@
                         <label for="" class="text-xl">Food:</label>
 
 
-                        <input type="text"
+                        <input type="text" id="food"
                             class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2">
                     </div>
 
@@ -61,7 +62,7 @@
                         <label for="" class="text-xl">Rent:</label>
 
 
-                        <input type="text"
+                        <input type="text" id="rent"
                             class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2">
                     </div>
 
@@ -72,27 +73,36 @@
                         <label for="" class="text-xl">Clothes:</label>
 
 
-                        <input type="text"
+                        <input type="text" id="clothes"
                             class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-sky-700 mt-2">
                     </div>
 
-                    <button
+                    <button onclick="sumTotal()"
                         class="inline-block flex justify-center bg-sky-500 hover:bg-sky-700 text-white font-bold rounded-lg px-6 py-2">
 
                         Calculate
 
                     </button>
 
-                    <div>Total expenses:$<span>5500</span></div>
-                    <div>Balance:$<span>4500</span></div>
-                    <div>Saving Amount:$<span>2000</span></div>
-                    <div>Remaining Balance:$<span>2500</span></div>
+
+
+                    <div class="col-md-4 ">
+                        <h5>Total expense: $ <span id="total-expense">5500</span></h5>
+                        <h5>Balance: $ <span id="balance">4500</span></h5>
+
+                        <h5>Saving: $<span id="savings">2000</span></h5>
+
+
+
+                    </div>
 
 
 
 
 
-                </form>
+
+
+                </section>
 
 
             </div>
